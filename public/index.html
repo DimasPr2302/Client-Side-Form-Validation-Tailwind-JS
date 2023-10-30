@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar - Tailwind CSS</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <section class="bg-gray-50 min-h-screen flex items-center justify-center p-8">
+    <!-- login form -->
+    <div class="bg-gray-100 flex p-6 rounded-2xl shadow-xl">
+      <!-- form -->
+      <div class="sm:w-full lg:w-1/2 p-8">
+        <h2 class="font-inter font-bold mb-2 text-4xl">Login</h2>
+        <p class="font-medium mb-4">Discover future for Living Wellbeings</p>
+        <form action="" class="flex flex-col" id="registration-form">
+          <label for="email" class="text-slate-700">Email</label>
+          <input class="p-3 rounded-xl my-2 focus:outline-none focus:ring-2 focus: ring-blue-400" type="email" name="email" required autocomplete="off" id="email">
+          <div id="email-error" class="hidden my-2 text-red-600 text-xs">Invalid email</div>
+          <label id="password" for="password" class="text-slate-700">Password</label>
+          <input id="password" class="p-3 rounded-xl my-2 focus:outline-none focus:ring-2 focus: ring-blue-400" type="password" name="email">
+          <button class="bg-[#05152E] text-white px-6 py-3 text-md rounded-xl mt-4 text-semibold hover:bg-white hover:text-[#05152E] hover:border hover:border-[#05152E] transition ease-in-out duration-200" type="submit">
+            Login
+          </button>
+        </form>
+
+        <div class="grid grid-cols-3 mt-10 items-center text-gray-400">
+          <hr class="border-gray-400">
+          <p class="text-center">OR</p>
+          <hr class="border-gray-400">
+        </div>
+
+        <button class="bg-white rounded-2xl p-3 w-full mt-10 flex justify-center items-center text-sm text-inter mb-4 transition duration-300 hover:bg-blue-50 hover:border hover:border-blue-300">
+          <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+            <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+          </svg>
+          Continue with Google
+        </button>
+
+        <a class="text-sm text-medium text-inter text-blue-500" href="#">Forgot password</a>
+
+        <div class="mt-4">
+          <hr class="bg-gray-400">
+        </div>
+
+        <div class="flex items-center mt-3 justify-between">
+          <p class="mr-3 text-sm">If Your Don't Have An Account</p>
+          <a class="bg-white border px-9 py-3 rounded-xl text-sm text-inter text-medium transition ease-in-out duration-300 hover:bg-[#05152E] hover:text-white" href="./register.html" type="submit">Register</a>
+        </div>
+      </div>
+      <!-- image -->
+      <div class="sm:w-1/2 lg:w-1/2">
+        <img class="rounded-2xl sm:block hidden h-full" src="../bg.jpg" alt="Background">
+      </div>
+    </div>
+  </section>
+
+  <script src="./index.js"></script>
+</body>
+</html>
